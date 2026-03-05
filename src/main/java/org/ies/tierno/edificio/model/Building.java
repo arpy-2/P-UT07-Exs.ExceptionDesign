@@ -21,10 +21,9 @@ public class Building {
             return;
         }
 
-        log.info("=== LISTA DE APARTAMENTOS ===");
+        log.info("Lista de apartamentos");
         for (Apartment apt : apartments) {
-            log.info("Planta {} - Puerta {} - {} propietarios",
-                    apt.getFloor(), apt.getDoor(), apt.getOwners().size());
+            log.info("Planta {} - Puerta {} - {} propietarios", apt.getFloor(), apt.getDoor(), apt.getOwners().size());
         }
     }
 
@@ -34,7 +33,7 @@ public class Building {
                 return apt;
             }
         }
-        throw new ApartmentNotFoundException("No existe el apartamento " + floor + door);
+        throw new ApartmentNotFoundException(floor, door);
     }
 
     public List<Owner> getOwners(int floor, String door) throws ApartmentNotFoundException {

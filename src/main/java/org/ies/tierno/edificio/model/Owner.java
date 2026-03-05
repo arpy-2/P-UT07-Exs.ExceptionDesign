@@ -8,4 +8,5 @@ import lombok.Data;
 public class Owner {
     private String name;
     private String lastName;
+
 }

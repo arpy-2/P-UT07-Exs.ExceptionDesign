@@ -16,7 +16,7 @@ public class BuildingReader {
     }
 
     public Building read() {
-        System.out.println("=== DATOS DEL EDIFICIO ===");
+        System.out.println("Datos del edificio - ");
 
         System.out.print("Dirección: ");
         String address = scanner.nextLine();
@@ -40,6 +40,7 @@ public class BuildingReader {
         try {
             int numApartments = Integer.parseInt(scanner.nextLine());
             for (int i = 0; i < numApartments; i++) {
+                System.out.println("\n--- Apartamento " + (i + 1) + " ---");
                 apartments.add(apartmentReader.read());
             }
         } catch (NumberFormatException e) {

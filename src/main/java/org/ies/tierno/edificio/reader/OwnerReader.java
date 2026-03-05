@@ -11,7 +11,7 @@ public class OwnerReader {
     }
 
     public Owner read() {
-        System.out.println("--- Propietario ---");
+        System.out.println("Propietario - ");
         System.out.print("Nombre: ");
         String name = scanner.nextLine();
         System.out.print("Apellidos: ");

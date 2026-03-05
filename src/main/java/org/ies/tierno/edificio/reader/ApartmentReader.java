@@ -16,7 +16,7 @@ public class ApartmentReader {
     }
 
     public Apartment read() {
-        System.out.println("\n--- Nuevo Apartamento ---");
+        System.out.println("Nuevo Apartamento");
 
         int floor = 0;
         while (true) {
@@ -40,7 +40,7 @@ public class ApartmentReader {
                 owners.add(ownerReader.read());
             }
         } catch (NumberFormatException e) {
-            System.out.println("Número inválido, 0 propietarios");
+            System.out.println("Número inválido, hay 0 propietarios");
         }
 
         return new Apartment(floor, door, owners);
