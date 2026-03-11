@@ -3,9 +3,7 @@
 ## Descripción
 
 Aplicación desarrollada en **Java 21** que simula la gestión básica de una empresa.
-El sistema permite trabajar con **empleados**, **departamentos** y **empresas**, además de manejar errores mediante **excepciones personalizadas** y registrar información mediante **logs**.
-
-Este proyecto utiliza **Apache Maven** para la gestión de dependencias y construcción del proyecto.
+El sistema permite trabajar con **empleados**, **departamentos** y **empresas**, además de manejar errores mediante **excepciones personalizadas** y registrar información mediante **logs**. Este proyecto utiliza **Apache Maven** para la gestión de dependencias y construcción del proyecto.
 
 ---
 
